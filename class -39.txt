@@ -1,0 +1,123 @@
+scm -- repo-- branch :
+devlop
+main
+
+dev
+stage
+prepod
+prod
+
+ * never works on main branch ,
+   our changes never do that main branch ,
+   we must created new or own branch example feature branch or devlop branch name wise our          
+   choice
+
+we create a new branch use this command : 
+
+git checkout -b feature-branch or devlop-branch
+
+
+actually git never tracks files , this tracks commit id's only 
+
+lab:
+clone the existing repo
+check the commits 
+check the HEAD
+check the commit changes
+
+*create a new branch from main
+
+*how many branches are there which command use?
+git branch
+
+*how to switching branch to branch ?
+ git checkout main (example)
+or git checkout master or git checkout feature-branch
+
+what is the feature-branch ?
+instead of working on the main targeted branch, i wanted to test my changes on specific branch , we use feature branch .
+
+
+pull request ?
+feature branch to main/devlop
+merge the code /merge the commit 
+
+what is branching strategy?
+devlopers works on feature branch.
+and test in one the environment.
+
+dev team raise a PR / MR  to another branch (devlop)
+
+then the test devlop branch in one of environment.
+
+if all goes good
+raise MR/PR to main .
+
+if deleted one branch , don't stay in deleted branch switch on another branch
+
+deleted command :
+
+git branch -D feature-branch
+
+remote changes bring the  local ,use this command:
+
+git pull origin main
+
+difference between git clone and git pull ?
+
+git clone bring the all changes remote to local.
+
+git pull only bring the new changes remote to local .
+
+
+git clone: bring the existing repo total info to local.
+
+pull : for the existing local repo, if we want to bring remote repo changes, we use pull.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

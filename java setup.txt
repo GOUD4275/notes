@@ -1,0 +1,43 @@
+jenkins set up ::---goudmula4275@gmail.com
+
+not execute successfully
+
+    sudo wget -O /etc/yum.repos.d/jenkins.repo \
+    https://pkg.jenkins.io/redhat-stable/jenkins.repo
+      yum repolist
+      rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+      yum upgrade
+      yum install epel-release java-11-openjdk-devel
+      
+      amazon-linux-extras install epel
+      amazon-linux-extras install java-openjdk11
+   
+     yum install jenkins
+     systemctl enable jenkins
+     systemctl start jenkins
+     ps -ef | grep -i jenkins
+
+
+   var/lib/jenkins  : jenkins home directory
+   jenkins user     : id jenkins
+
+this is the excute successfully
+
+      sudo wget -O /etc/yum.repos.d/jenkins.repo \
+      https://pkg.jenkins.io/redhat-stable/jenkins.repo
+      yum repolist
+      systemctl status jenkins
+      rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+      yum upgrade
+      
+      amazon-linux-extras install epel
+      amazon-linux-extras install java-openjdk11
+      yum install jenkins
+     systemctl enable jenkins
+
+     systemctl start jenkins
+
+     ps -ef | grep -i jenkins
+  
+     netstat -anlp | grep -i "8080"
+

@@ -1,0 +1,24 @@
+GIT
+git hub --repositories --branching ---commit id's---
+
+first we are create one folder inside another folder create through visual code or desktop
+* after that through visual code open that folder and create one html folder example index.html
+*write some data example: <h1> hello this is me<h1>
+*save and this is local , we are connect to the local to git hub
+* example we are create apps folder inside staticwebsite 
+*with visual code open index.html
+*we are run to the local we are sucess
+*after that we are open git bash
+*we are inside the folder use cd /apps/staticwebsite
+*now we are only once use git init
+*this time you check it git status , this are red lines flashed this are untracked stage
+*now we are use git add that file name example git add index.html
+*this time that file moved to untracked to tracked stage 
+*first this working place next this stageing area 
+*we are use git commit -m " file is created " now this file give one commit number this time starts now that file is tracked . if you are modifed any one this file are mention.
+*now we are use some command example git branch -m main
+*git remote add origin https:
+*git push -u origin main
+*now task is complete.
+*after that you see the your commits use this command git show commit number
+*if you are see the all commands git log command enter 

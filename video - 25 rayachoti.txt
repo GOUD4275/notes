@@ -1,0 +1,91 @@
+VPC - virtual private cloud --  cider range -- 172.31.0.0./16 (example see the number /16 )
+
+subnets  ---- (172.31.0.0/20  example see the /20 )
+
+example /20  = 30 - 20 = 12  2^12  = 4091
+
+CIDR.xyz  search browser  how many ips allocating one subnet 
+
+IGW - internet gate way --- automatically attached to the VPC
+
+NGW - NAT gate way
+
+sg - security group
+sg is attache to vpc
+it will have inbound and outbound rules
+it will have only allow
+state less
+
+
+Nacl - network access control list
+nacl must touch inbound and outbound rules
+nacl is attached vpc 
+it will hvae both ingress/egress rules
+we will have both allow and deny
+
+we will order of rules (which is the lowest number that is works )
+0-22 allow ---- this works
+1-22 deny 
+2-22 allow
+3-22 deny
+
+Nacl is group of ec2  's providing network security
+nacl attach to the subnets example ap-south-1a , ap-south-1b , ap-south-1c , nacl covers to the all subents.
+nacl is for subnets ( in this subnets all components covers)
+state less why because we are touch the both rules ( inbound and outbound)
+
+
+network - compute - storage
+
+Route Tables  -- subenet associations
+
+
+
+
+what is the difference between system status checks and instance state ?
+
+systemstatus check is fail what to do answer is stop and start (restart) this is aws problem
+
+instance status check search of logs this is our problem
+
+
+lab:
+client---frontend----backend---rds
+1) sg
+2) frontend
+3) backend
+4) rds -instance databases 
+    databases  --- (tables and columns)
+    database = sql databases
+    rows and columns = data
+    what type of data = schma
+    in aws data base is NoSQL = DynamoDB (unstructured data) example maps , youtube, flipkart search relative items also visible.
+  * Never keep in RDS in public
+
+
+ 4.1) create subnet group.
+ 4.2) create sg
+
+
+username : admin
+password : 
+
+
+Frontend-sg
+22 - my IP
+apache - 80 -- anywhere
+
+
+backend-sg
+22 - 
+8080
+
+
+
+
+
+
+
+
+
+

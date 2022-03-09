@@ -1,0 +1,10 @@
+postman tool:
+
+lambda:
+ 
+have you worked on the lambda ?
+i have worked on the lambda but my main role is create the functions most of the code as taken care by the devlopers.
+
+
+
+create function after that given name example helloWorld and select the lunguage and architecture default 86.64 then automaticly attach the iam role in add permission , in  advanced settings select the enable networking then give vpc,select subnets and attach the security group.

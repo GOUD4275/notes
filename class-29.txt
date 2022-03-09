@@ -1,0 +1,52 @@
+create security groups
+
+lab-alb-sg  --- 80--- anywhere
+
+lab-alb-ec2-sg ----22----my ip
+                   80 ---- lab-alb-sg
+
+
+launch 2 ec2 machines use userdata 
+
+#!/bin/bash
+yum update -y
+yum install httpd -y
+systemctl start httpd
+systemctl enable httpd
+mkdir -p /var/www/html/football/
+echo "this is football" >/var/www/html/football/index.html
+
+
+#!/bin/bash
+yum update -y
+yum install httpd -y
+systemctl start httpd
+systemctl enable httpd
+mkdir -p /var/www/html/cricket/
+echo "this is cricket" >/var/www/html/cricket/index.html
+
+
+important note:
+
+if you are search in browser this is cricket or this is football is not comming what is the reason is file is /var/www/index.html  inside so we are searching way is ip/cricket/index.html or ip/football/index.html page is comming in browser
+
+not adding this scenario alb  before this comming do one thing edit inbound rules given 80 my ip  then it's come if not given this is not come 
+
+
+
+create 2 target groups
+
+then one alb loabbalancer
+
+
+rules is goto the loadbalancer and click on the listeners view edit rules 
+ given the /cricket/*   forward to the cricket
+/football/* forward to the football
+
+path is /cricket/*
+
+path is /football/*
+
+
+take alb dns name and search to the in browser and add to the end /cricket or /football it's now working
+

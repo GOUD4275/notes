@@ -1,0 +1,62 @@
+ls -ltrh .pem ---- pem size is desplay
+if you see the pem how many lines in pem file use this command----  wc -l .pem (l for lines, w --words ,c -- characters)
+
+file creating using commands is :
+vi --main use for this edit and create file purpose
+
+if you see the content use this commands:
+cat 
+more
+less
+
+
+use example :  vi apache.pem
+open another gitbash goto the downloads ,use cat keypair.pem 
+taken data past to the bastion in vi apache.pem 
+
+:wq!  --w -write ,q --quite ,!-- force to quite
+
+owner:group:others
+
+
+files = 666 umask = default permissions
+directory = 777 umask = default permissions
+
+pem files must 400 permissions , if we are change permissions use this command :        chmod 400 .pem
+
+
+telnet ip port
+nc -vz ip port   note  :  nc = netcat  : v = verboze 
+
+remote port open or not checking purpose (source to destination)
+
+
+remote machine means - apache
+remote user - ec2
+
+current user is - ec2 
+current machine is - bastion
+
+
+in this scenario  remote user and current user same so we donot need use : ec2-user@
+
+
+curl /local /bastion /ip
+
+if we are remove nat gateway it's not connecting to remote machine (apache)
+
+then it's same way remove the igw we are not allow any machine
+
+interview question:
+* difference between public subnet and private subnet ?
+* igw vs natgateway
+
+(igw connects to the public ip: nat gateway  connects to the private ip)
+
+in this scenario files means logs , suppose we see the last x days files created use this command - find
+
+
+
+
+
+

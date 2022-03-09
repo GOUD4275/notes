@@ -1,0 +1,50 @@
+sonarqube --- youtube ---
+
+sonarqube version -- present running 9+ version
+                     we are taken 6.4 version
+                     ram size is 4gb
+                     default port number 9000
+                     
+
+
+
+
+
+sonarqube main purpose is code quality checking or it's  make report generate
+code quality major or mainor or ethical this are checking sonarqube
+
+
+how to install sonarqube 6.4 on centos 7
+techrideadmin or devopscube take anyone
+
+first intall java
+
+https://medium.com/knoldus/how-to-integrate-your-maven-project-with-sonarqube-79f7368f8c7a
+ 
+ 
+
+[Unit]
+Description=SonarQube service
+After=syslog.target network.target
+
+[Service]
+Type=forking
+
+ExecStart=/opt/sonarqube/bin/linux-x86-64/sonar.sh start
+ExecStop=/opt/sonarqube/bin/linux-x86-64/sonar.sh stop
+
+User=root
+Group=root
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
+
+
+
+
+
+
+
+                 

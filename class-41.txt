@@ -1,0 +1,57 @@
+<a href ="sercice.html"> service </br> </a>
+<a href ="contact.html"> contact </br> </a>
+<a href ="about.html"> aboutus </br> </a>
+
+sercice.html  --  this is service
+contact.html  --  this is contact
+about.html    --  this is contact purpose
+
+we create new git repositroy then goto the gitbash 
+afterthat 
+
+we are create another directory used by mkdir developer (example name developer)
+in gitbash.
+
+then bring the git clone code by git hub monolithic code
+
+
+git pull -- auto merge
+
+git fetch + git merge
+
+lab:
+
+shutdown ec2 evening -7pm and bring up 9 am
+shutdown on weekend
+
+
+yum update -y
+yum install httpd git -y
+systemctl start httpd
+systemctl enable httpd
+ps -ef | grep "httpd"
+systemctl status httpd
+netstat -anlp | grep "80"
+git clone https://github.com/GOUD4275/monolithic.git
+cd monolithic 
+cp -r * /var/www/html/
+
+
+perf testing must see the loadbalancing
+
+
+now we are adding another feature example careers.html 
+
+go to the visual code add the careers.html
+
+once you change the code we must enter the ec2 -machine after switching the root user
+use the git clone command it's not working why because , previously we are cloning ,
+so we do one thing use ls -l , use rm -rf (remove command) directory name
+then use gitclone 
+now this time working
+
+
+
+cp -nrf monolithic/* /var/www/html/   ---direct not manualy cd monolithic not need 
+
+

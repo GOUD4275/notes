@@ -1,0 +1,36 @@
+Two sg's
+
+first creating sg's for ALB ---80 --anywhere
+second sg ---apache ----80-----alb
+                        22----myip(vpn)
+                        80----myip (optional)
+
+Two ec2-instances
+
+one instance
+
+avalable zone 1a
+
+#!/bin/bash
+yum install httpd -y
+systemctl start httpd
+systemctl enable httpd
+echo "this is server1" >/var/www/html/index.html
+
+
+available zone 1b
+
+#!/bin/bash
+yum install httpd -y
+systemctl start httpd
+systemctl enable httpd
+echo "this is server2" >/var/www/html/index.html
+
+
+create load balancer
+
+*attach to the alb sg 
+
+
+
+

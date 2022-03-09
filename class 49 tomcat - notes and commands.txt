@@ -1,0 +1,49 @@
+https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.58/bin/apache-tomcat-9.0.58-windows-x64.zip
+
+
+shell - script:-
+-------------
+
+
+#!/bin/bash
+#install java 
+sudo amazon-linux-extras install epel -y
+sudo amazon-linux-extras install java-openjdk11 -y
+#install the tomcat 
+cd /opt/
+sudo wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.58/bin/apache-tomcat-9.0.58-windows-x64.zip
+#extract
+#sudo unzip apache-tomcat-9.0.58-windows-x64.zip
+# delete the zip
+sudo rm -f apache-tomcat-9.0.58-windows-x64.zip
+#rename         
+#sudo mv apache-tomcat*  tomcat
+#sudo chmod -R 755 /opt/tomcat/
+#sudo sh /opt/tomcat/bin/startup.sh
+
+{'*' means full form completed}
+
+
+* shoppingcart.zip oracle   browsing search
+
+* Configuring a Web Application for In-Memory Replication      goto the this line
+
+* in first line right click copy the link
+
+##commands with ec2 user
+    touch temp
+     ls
+     cd temp/
+     wget https://www.oracle.com/webfolder/technetwork/tutorials/obe/fmw/wls/10g/r3/cluster/session_state/files/shoppingcart.zip
+     ls -la
+     unzip shoppingcart.zip
+     ls -l
+     sudo cp shoppingcart.war /opt/tomcat/webapps/
+     ls -l /opt/tomcat/webapps/
+     ls -l /opt/tomcat/webapps/
+     cd /opt/tomcat/logs
+     
+     sudo tail -100f catalina.out
+
+
+

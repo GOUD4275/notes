@@ -1,0 +1,72 @@
+class -26
+
+see the video connect to the rds from client
+
+mysql -h <rds url> -u username -p
+
+1) connect to the backend
+2) install mysql cli : yum install mysql -y
+3) fetch rds url from console
+
+
+mysql -h database-1.c1dm6eneirfa.ap-south-1.rds.amazonaws.com -u admin -p9966927212
+
+telnet host port  <rds url is our host>
+
+
+telnet  database-1.c1dm6eneirfa.ap-south-1.rds.amazonaws.com 3306
+
+nc -vz backend-database-mysql.c1dm6eneirfa.ap-south-1.rds.amazonaws.com 3306
+
+
+
+first we create 3 security groups 
+* frontend ----22 my ip   80---- anywhere
+* backend -----22 my ip   8080 -----frontend
+* database ----3306-------backend
+
+after that we create two ec2 machines
+* first ec2-machine ----sg is ---taken backend sg this ec2-machine name is backend
+
+* second ec2-machine ----sg is database this name is database
+
+then we are create one RDS database
+*this rds machine give vpc security group is Database sg is connect.
+
+
+#  3- sg's  and  2 ec2-machines one RDS database
+ 
+then connect to the git bash through backend ec2-machine
+
+#commands for mysql
+
+*show databases;
+*create database tiktok;
+*create database employee;
+
+example:
+
+use employee; 
+this command or queary is see the inner side database
+use tiktok;
+
+we want see any table ---  show tables;
+
+delete one database ---- drop  database employee;
+
+
+
+labs:
+database maintainence ,backup window connect to the rds
+
+
+
+
+
+
+
+
+
+
+
+

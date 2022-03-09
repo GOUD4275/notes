@@ -1,0 +1,68 @@
+NEXUS FROM YOUTUBE
+
+
+https://devopscube.com/how-to-install-latest-sonatype-nexus-3-on-linux/
+
+https://help.sonatype.com/repomanager3/product-information/download
+
+ yum update -y
+ yum install wget -y
+ yum install java-1.8.0-openjdk.x86_64 -y
+ cd /opt
+ sudo wget -O nexus.tar.gz https://download.sonatype.com/nexus/3/latest-unix.tar.gz
+ tar -xvf nexus.tar.gz
+ mv nexus-3.37.3-02/ nexus  
+ cd nexus/
+ cd bin/
+ cat nexus
+ sh nexus staus
+ sh nexus start
+ sh nexus staus
+  vim nexus.rc
+  vim nexus.vmoptions
+  cd ..
+  cd etc/
+  cd ..
+  cd
+  useradd nexus
+  id nexus
+  cd opt/
+  cd /opt
+  chown -R nexus:nexus nexus
+
+
+note : E325:attention when ever you got this error you must enter "e" letter editanyway
+
+ cd nexus/
+ cd bin/
+ vi nexus.vmoptions
+ vi nexus.rc
+ vim nexus.rc              note vi or vim same
+ sh nexus start
+ sh nexus status
+ cd /opt
+  cd sonatype-work/
+  cd nexus3/
+  cat admin.password
+
+
+
+
+
+
+
+
+
+
+     
+  
+
+
+
+
+
+
+
+sudo wget -O nexus.tar.gz https://download.sonatype.com/nexus/3/latest-unix.tar.gz
+
+-o  --- command is option

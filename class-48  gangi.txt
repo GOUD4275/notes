@@ -1,0 +1,42 @@
+48 -- video  
+
+
+*first we are open jenkins use in publincip
+*https://maven.apache.org/
+*
+
+
+#!/bin/bash
+#install git
+sudo yum install git -y
+#downloading the maven
+sudo wget https://dlcdn.apache.org/maven/maven-3/3.8.4/binaries/apache-maven-3.8.4-bin.tar.gz  
+#extract
+sudo tar -xvzf apache-maven-3.8.4-bin.tar.gz
+#rename
+sudo  mv apache-maven-3.8.4 maven
+#remove the gz
+sudo rm -rf apache-maven-3.8.4-bin.tar.gz
+
+
+
+./mvn ----- file excute use this command
+
+path is very important ----path is ----/opt/maven/bin/mvn package
+
+
+
+# git hub addina credentials 
+
+# first we are goto the gitbash local and cd .ssh
+# we have two keys are avilable they are one is public key another one is private key
+# public key add git hub
+# private key add jenkins
+
+
+
+
+
+
+
+

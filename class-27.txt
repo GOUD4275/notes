@@ -1,0 +1,49 @@
+*first we are creating 3 security groups
+
+*bastion -----22 -----my ip
+*frontend-----22------bastion-sg connect----80------anywhere
+*backend------22------bastion-sg------------8080----frontend-sg
+*database-----3306----bastion-sg------------3306----backend-sg
+ 
+note: in organization my IP is called VPN IP 
+
+uptime
+free -m
+os family found - uname or want clearly uname -a
+are we wich bit command for --- arch
+pwd -- present working directory
+command id 
+root user id is 0
+normal user start 1000
+passwd  -- command  (if given password use this command)
+
+scp -i link.pem link.pem ec2-user@15.207.84.32:/home/ec2-user
+
+
+
+
+if you got this error like 
+ @@@@@@@@@@@ WARNING : UNPROTECTED PRIVATE KEY FILE! @@@@@@@@@@@@@@@
+when ever this error got you first do this 
+
+chmod 400 .pem
+
+
+
+we are change to the root@ip-172-31-43-15 ~  this number converto to the name 
+use this command   ----  hostname goud
+after that ---------   su
+then name is change goud
+ 
+
+
+
+
+
+
+
+
+
+
+
+

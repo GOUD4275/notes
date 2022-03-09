@@ -1,0 +1,72 @@
+vpc ---
+create a vpc and cidr ranges
+ 
+dev-vpc 10.0.0.0/16
+
+tenancy most of the times default
+
+you must DNS hostname change to enable
+
+subnets:
+
+pub-subnet-1a       10.0.0.0/24
+private-sunnet-1a   10.0.1.0/24
+
+
+pub-subnet-1b       10.0.2.0/24
+private-sunnet-1b   10.0.3.0/24
+
+pub-subnet-1c       10.0.4.0/24
+private-sunnet-1c   10.0.5.0/24
+
+
+NOTE:
+all 3 public subnets select actions and edit subnet settings  click on  enale auto-assign public-ipv4 address
+
+
+goto the internet gateways
+give name  exaple dev-igw  defaulty detached change to the attache to the vpc
+
+natgateway 
+give name example  dev-nat-gateway
+subnet important and interesting point attach the public subnet any one only
+and add the elastic ip
+
+routetables
+
+creating 2 route tables
+add the vpc
+1 is public route table
+2 is private route table
+
+
+subnet associations
+public subnets attaching and save
+
+click on routes  and edit then add route given destination select 0.0.0.0/0 add target igw   to public route table
+
+
+same as public route table select private route table select subnetassociations attach the private subnets and routes also same given destination 0.0.0.0/0 and target attach the natgateway.
+
+
+
+peering : one vpc to another vpc without bastion private to private connecting called  the vpc peering.or transist gateway
+private to private or private to public also doesn't matter.
+
+
+
+creating two ec2-machines
+they are
+one is select our dev-vpc and select private ip and sg is 22,80 anywhere this machine name is example -- dev-apache(our choice)
+
+second machine is select dev-vpc and select public ip , sg is 22 myip this name is example is --- dev-bastion(our choice)
+
+
+
+
+
+
+
+
+
+

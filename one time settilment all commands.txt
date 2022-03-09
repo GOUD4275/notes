@@ -1,0 +1,11 @@
+yum update -y
+yum install httpd git -y
+systemctl start httpd
+systemctl enable httpd
+systemctl status httpd
+ps -ef | grep -i httpd
+netstat -anlp | grep "80"
+git clone https://github.com/GOUD4275/production-app.git
+cd production-app
+cp -r * /var/www/html
+

@@ -1,0 +1,25 @@
+life cycle of git ?
+file creating---- working directory
+this is not tracking this file modify or edit not identify
+
+if you use git add -- files moves to the working directory to statging area in this step to track the our file
+
+. -- means current directory
+
+if you go to the working directory to staging area use this command git rm --cached<file>
+
+
+git commit -m "first commit"  -- "-m" means message
+
+if you want personal token you go to the setting /Developer settings --- generate new token 
+give name and permissions all are enable . -- generate a token.
+
+git log --- command how many commits are there in the file
+
+git show --- that in commit sha what is the changes identify use this command 
+         git show (commit 42 id some numbers )
+
+
+
+
+

@@ -1,0 +1,48 @@
+first we creating own keypair
+
+create ownkey how to this way first we goto the gitbash take public key ,cd .ssh 
+cat id_rsa.pub
+
+this publickey put on the ownkey pair
+
+in organization publickey and private key are save -- in walt 
+
+
+Note:
+
+to ssh command not given pem file , automatically goto the home directory .ssh folder then automatically pick the id_rsa pem (private pem) file.
+
+this go to the through private pem file (home directory) connect to the aws public pem file.
+
+connect to the ec2-machine two ways they are 
+1) ssh ec2-user@IP
+2) give the full path : ssh -i /c/Users/gowd2/.ssh/id_rsa ec2-user@IP
+
+
+go to the git hub take the code or clone id
+then come to the ec2-machine , root user install the git
+best prefers the create one folder 
+and give the git clone command paste
+goto the ls -la
+our local file pick and cd file name , inside the file
+give the cp -r * /var/www/html/
+ 
+and goto the browser search the public ip result is comeing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
